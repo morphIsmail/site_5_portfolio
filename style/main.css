@@ -18,8 +18,12 @@ body {
 .team__item {
   display: flex;
 }
+.team__item img {
+  align-self: center;
+}
 .team__inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 h2 {
@@ -29,4 +33,14 @@ h2 {
 .team__text {
   max-width: 350px;
   padding-left: 20px;
+}
+@media screen and (max-width:420px) {
+  .team__item  {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .team__text {
+    padding-left: 0;
+  }
 }
